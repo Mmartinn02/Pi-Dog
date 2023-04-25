@@ -1,0 +1,46 @@
+.navButton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color4);
+}
+
+.title {
+    color: var(--color2)
+}
+
+.navList {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: var(--color2);
+}
+
+a:hover {
+    color: var(--color1);
+}
+
+.logo {
+    cursor: default;
+    color: var(--color2);
+    flex: 1;
+    display: flex;
+    font-weight: 900;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,177 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: var(--color-1);
+}
+
+.button_back,
+.button_back_w {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background: transparent;
+    padding: 2px 6px;
+    z-index: 3;
+}
+
+
+.button_back_w button {
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 3px;
+    height: 3em;
+    padding: 0 2em;
+    border: none;
+    background-color: var(--color3);
+    color: var(--color4);
+    box-shadow: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button_back button {
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 3px;
+    height: 3em;
+    padding: 0 2em;
+    border: none;
+    background-color: var(--color3);
+    color: var(--color1);
+    box-shadow: var(--color4);
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button_back button::before,
+.button_back_w button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    background: var(--color2);
+    background: linear-gradient(to top, var(--color3) 0%, var(--color3) 100%);
+    transition: 0.2s;
+}
+
+.button_back button .label,
+.button_back_w button .label {
+    position: relative;
+}
+
+.button_back button .icon,
+.button_back_w button .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 3em;
+    left: -3px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.button_back button:hover::before,
+.button_back_w button:hover::before {
+    height: 100%;
+}
+
+.button_back button:hover .icon,
+.button_back_w button:hover .icon {
+    top: 0;
+    opacity: 1;
+}
+
+.card {
+    width: 800px;
+    height: 90%;
+    background: var(--color2);
+    border-radius: 12px;
+    box-shadow: var(--color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.card_container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-family: 'Dog';
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color4);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.image {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--color4);
+}
+
+.container__info {
+    text-align: center;
+    color: var(--color3);
+    line-height: 1;
+}
+
+@media (max-width: 1000px) {
+    .card {
+        width: 600px;
+        height: 87%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 500px;
+    }
+}
+
+@media (max-width: 640px) {
+    .card {
+        width: 80%;
+        height: 80%;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .image {
+        height: 200px;
+    }
+}

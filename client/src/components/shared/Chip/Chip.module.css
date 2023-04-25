@@ -1,0 +1,42 @@
+.chip {
+ font-size: 11px;
+ min-height: 25px;
+ font-weight: 300;
+ display: inline-flex;
+ align-items: center;
+ background-color: var(--color2);
+ color: var(--color3);
+ border-radius: 10px;
+ margin-right: 5px;
+ margin-bottom: 5px;
+}
+
+.titleWithIcon {
+    padding-left: 8px;
+    cursor: default;
+}
+
+.icon {
+    padding: 7px 7px 7px 9px;
+    color: var(--color3);
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.title {
+    padding: 7px 12px 7px 7px;
+    cursor: default;
+}
+
+.chipWithIcon {
+    min-height: 25px;
+    font-size: 11px;
+    font-weight: 300;
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color2);
+    color: var(--color3);
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+   }
